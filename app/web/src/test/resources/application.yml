@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: dev
+  datasource:
+    url: jdbc:postgresql://147.45.109.251:5432/resume
+    driver-class-name: org.postgresql.Driver
+    username: resume
+    password: resume
+  jpa:
+    show-sql: true
+  liquibase:
+    enabled: false
+
+logging:
+  level:
+    org:
+      springframework:
+        cache: debug

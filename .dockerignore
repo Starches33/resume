@@ -1,0 +1,7 @@
+.dockerignore
+.DS_Store
+Dockerfile
+docker-compose.prod.yml
+
+/resume/.gradle/
+/resume/buildSrc/.gradle/

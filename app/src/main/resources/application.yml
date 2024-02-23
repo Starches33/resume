@@ -1,0 +1,37 @@
+server:
+  shutdown: graceful
+
+spring:
+  profiles:
+    active: resume
+  datasource:
+    url: jdbc:postgresql://147.45.109.251:5432/resume
+#    url: jdbc:postgresql://147.45.109.251:5432//resume
+#    url: jdbc:postgresql://localhost:5432/resume
+    driver-class-name: org.postgresql.Driver
+    username: resume
+    password: resume
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+#  liquibase:
+#    change-log: classpath:db/changelog/db.changelog-master.yaml
+  databaseChangeLog:
+    - includeAll:
+        path: classpath*:db/changelog/changes
+    - include:
+        file: db/changelog/db.changelog-master.yaml
+logging:
+  level:
+    org:
+      springframework:
+        cache: debug
+
+cors:
+  allowedOrigin: "http://147.45.109.251:3000"
+#
+#telegram:
+#  bot:
+#    username: test
+#    token: test_token
