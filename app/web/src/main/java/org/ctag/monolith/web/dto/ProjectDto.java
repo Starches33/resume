@@ -16,7 +16,4 @@ public class ProjectDto {
     private String workPeriod;
 
     private String stack;
-
-    private String tasks;
-
 }

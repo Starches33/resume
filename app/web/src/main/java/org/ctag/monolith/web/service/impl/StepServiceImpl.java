@@ -1,13 +1,9 @@
 package org.ctag.monolith.web.service.impl;
 
-
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.ctag.monolith.domain.service.DomProjectService;
 import org.ctag.monolith.domain.service.DomStepService;
-import org.ctag.monolith.web.dto.ProjectDto;
 import org.ctag.monolith.web.dto.StepDto;
-import org.ctag.monolith.web.mapper.ProjectMapper;
 import org.ctag.monolith.web.mapper.StepMapper;
 import org.ctag.monolith.web.service.StepService;
 import org.springframework.stereotype.Service;
@@ -40,5 +36,4 @@ public class StepServiceImpl implements StepService {
                 .map(stepMapper::map)
                 .collect(Collectors.toList());
     }
-
 }

@@ -16,5 +16,4 @@ public class StepDto {
     private String title;
 
     private String description;
-
 }

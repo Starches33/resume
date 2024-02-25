@@ -8,8 +8,7 @@ create table projects
     id serial primary key,
     work_period varchar(30) not null,
     java_version varchar(30) not null,
-    stack varchar not null,
-    tasks varchar not null
+    stack varchar not null
 );
 
 create table steps

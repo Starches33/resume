@@ -28,7 +28,6 @@ public class DomProjectServiceImpl implements DomProjectService {
     public List<Project> getProjectList() {
         var projectList = projectRepository.findAll();
 
-
         if (projectList.isEmpty()) {
             log.info("projectList пуст");
 

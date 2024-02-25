@@ -4,5 +4,4 @@ plugins {
 
 dependencies {
     implementation(Dependencies.SPRING_BOOT_WEB)
-
 }

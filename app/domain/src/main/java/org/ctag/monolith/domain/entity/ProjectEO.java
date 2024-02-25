@@ -34,7 +34,4 @@ public class ProjectEO {
 
     @Column(name = "stack", nullable = false)
     private String stack;
-
-    @Column(name = "tasks", nullable = false)
-    private String tasks;
 }

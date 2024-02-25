@@ -18,8 +18,6 @@ tasks.withType<Test> {
 
 dependencies {
 
-//    implementation(Dependencies.SPRING_BOOT_WEB)
-
     implementation(Dependencies.COMMONS_COLLECTIONS)
     implementation(Dependencies.COMMONS_LANG)
 

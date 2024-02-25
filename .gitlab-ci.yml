@@ -2,21 +2,6 @@ stages:
   - build
   - run
 
-#build-only-MR:
-#  stage: build
-#  tags:
-#    - docker
-#  image:
-#    name: gcr.io/kaniko-project/executor:v1.9.2-debug
-#    entrypoint: [ "" ]
-#  script:
-#    - /kaniko/executor
-#      --context "${CI_PROJECT_DIR}"
-#      --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
-#      --no-push
-#  only:
-#    - merge_requests
-
 build:
   stage: build
   image: docker:20.10-git
@@ -37,7 +22,7 @@ build:
 #    - docker rmi back
     - docker build -t back .
   only:
-    - master
+    - main
 
 run:
   stage: run
@@ -56,4 +41,4 @@ run:
   script:
     - docker run -d --name back -p 8080:8080 back
   only:
-    - master
+    - main

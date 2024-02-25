@@ -18,6 +18,4 @@ public class Project {
     private String javaVersion;
 
     private String stack;
-
-    private String tasks;
 }

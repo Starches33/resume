@@ -1,8 +1,8 @@
 spring:
   profiles:
-    active: dev
+    active: test
   datasource:
-    url: jdbc:postgresql://147.45.109.251:5432/resume
+    url: jdbc:postgresql://92.63.178.149:5432/resume
     driver-class-name: org.postgresql.Driver
     username: resume
     password: resume

@@ -3,78 +3,39 @@
 --changeset ydshkn:2
 --comment fill projects and steps
 
-insert into projects(work_period, java_version, stack, tasks)
-values ('2020 - 2022', 'java 8 || 13',
-        'Стек
-        - java 8 | 11, maven
-        - GitLab, Trello, Slack;
-        - Spring (Core, MVC, Boot, Security),
-        - JDBC, Hibernate/JPA,
-        - MySQL | PostgreSQL,
+insert into projects(work_period, java_version, stack)
+values ('2020 - 2022', 'java 8 || 11',
+        '- Maven
+        - GitLab, Trello
+        - Spring (Core, MVC, Boot, Security)
+        - JDBC, Hibernate/JPA
+        - MySQL || PostgreSQL
         - Liquibase
         - JUnit, Mockito
-        - Docker, Kubernates, Jenkins, Kafka,
+        - Docker, Kubernates, Jenkins
         - Lombok
-        - SLF4J, logback,
+        - SLF4J, logback
         - Kuberbates, Docker
-        - HTML, CSS, JS (JQuery, AJAX, Fetch, React.js), Bootstrap, Thymeleaf',
-        'Мы разрабатывали приложения и решения для систематизации, автоматизации, оптимизации, мониторинга и контроля закупок, логистики и складских запасов
-        клиник и организаций в сфере 44ФЗ/223ФЗ.
-
-        Я занимался несколькими сервисами обеспечивающими управление документацией, отчетностью, учетом данных, сбором статистики и взаимодействием между различными отделами в рамках монолита и микросервисов.
-
-        Мои задачи
-
-        - Помогал аналитикам в проектировании новой логики, и разрабатывал ее в дальнейшем.
-        - Принимал участие в оценке задач бизнеса с последующей постановкой задач на спринты.
-        - Совершал интеграции со сторонними API.
-        - Совершал манипуляции с бд: написание sql-скриптов, добавление новых сущностей, миграции, правки существующей архитектуры, разработка новой архитектуры.
-        - Правил появляющиеся баги, зачастую трудноуловимые за счет величины legacy-системы, помогал тестировщике в “отловке” подобных.
-        - Писал юнит-тесты для новой логики.
-        - Проводил код-ревью коллег.
-
-
-        Впечатление
-
-        В команде был мой старт в бэкенде, спасибо жизни за всех людей на этом проекте, с каждым коллегой есть много совместных воспоминаний, от приятных бесед до разбора задач, особенно с минимальными сроками исполнения и с повышенной ответственностью.
-
-        Большинство коллег стали мне близкими друзьями, с которыми я общаюсь по сей день.');
+        - HTML, CSS, JS (JQuery, AJAX, Fetch, React.js), Bootstrap, Thymeleaf');
 
 
 
-insert into projects(work_period, java_version, stack, tasks)
+insert into projects(work_period, java_version, stack)
 values ('2022 - по н. в.', 'java 8 || 11',
-        'Стек
-
-        - java 8 | 11, gradle,
-        - Jira, Bitbucket,
-        - Spring (Core, MVC, Boot, Security),
-        - JDBC, Hibernate/JPA,
+        '- Gradle
+        - Jira, Bitbucket
+        - Spring (Core, MVC, Boot, Security)
+        - JDBC, Hibernate/JPA
         - OracleSQL | PostgreSQL
-        - JOOQ,
-        - Liquibase,
-        - JUnit, Mockito,
-        - Lombok,
-        - Kuberbates, Docker,
-        - SLF4J,
-        - HTML, CSS, JS (JQuery, AJAX, Fetch, React.js), Bootstrap, Thymeleaf.',
-        'Работал в команде в рамках монолита и микросервиса, отвечающими за кредиты и бизнес-решения клиентов ММБ. Мы сделали много решений, облегчающих жизнь клиентам-предпринимателям и сотрудникам банка, а также решения, прогревающие клиента к целевым действиям - кредитным услугам.
-
-        Я занимался поддержкой и внедрением новой логики, обсуждая задачи с аналитиками.
-
-
-        Мои задачи
-
-        Разрабатывал новую логику или изменял существующую, согласно задачам аналитика
-        Совершал манипуляции с бд: написание sql-скриптов, добавление новых сущностей, миграции, правки существующей архитектуры, разработка новой архитектуры
-        Правил баги, в тч трудноуловимые за счет величины legacy-системы, помогал тестировщикам/аналитикам в “отлове” подобных среди большого проекта
-        Писал юнит-тесты для новой логики
-        Проводил код-ревью коллег
-
-
-        Впечатление
-
-        Здесь я снова встретил замечательных людей, с которыми общаюсь по сей день, понял и надеюсь, что в нашем IT все стараются быть такими)');
+        - JOOQ
+        - OPEN_API
+        - Liquibase
+        - JUnit, Mockito, Cucumber
+        - Lombok
+        - Kuberbates, Docker
+        - Kafka
+        - SLF4J
+        - HTML, CSS, JS (JQuery, AJAX, Fetch, React.js), Bootstrap, Thymeleaf.');
 
 insert into steps (title, year, description)
 values ('Старый pascal', '2009',

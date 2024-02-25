@@ -5,7 +5,6 @@ plugins {
 }
 
 group = "org.ctag.monolith.back"
-//version = "1"
 
 java {
     sourceCompatibility = JavaVersion.VERSION_21
